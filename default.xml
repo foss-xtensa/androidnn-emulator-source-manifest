@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch="https://github.com/jcmvbkbc/" />
   <default revision="emu-master-dev"
            remote="aosp"
            sync-j="4" />
@@ -21,7 +23,7 @@
   <project path="external/gtest" name="platform/external/gtest" revision="master" />
   <project path="external/google-benchmark" name="platform/external/google-benchmark" revision="db1632fadc79df388a2a7248157c965ee40248a1" />
   <project path="external/protobuf" name="platform/external/protobuf" />
-  <project path="external/qemu" name="platform/external/qemu" />
+  <project path="external/qemu" name="platform-external-qemu" remote="github" revision="oreo-xtsc-cosim" />
   <project path="frameworks/native" name="platform/frameworks/native" revision="lollipop-release" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" />
   <project path="prebuilts/android-emulator-build/archive" name="platform/prebuilts/android-emulator-build/archive" clone-depth="1" />
