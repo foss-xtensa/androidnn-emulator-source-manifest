@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch="https://github.com/foss-xtensa/" />
   <default revision="emu-master-dev"
            remote="aosp"
            sync-j="4" />
@@ -22,7 +24,7 @@
   <project path="external/google-benchmark" name="platform/external/google-benchmark" revision="db1632fadc79df388a2a7248157c965ee40248a1" />
   <project path="external/libyuv" name="platform/external/libyuv" revision="master"/>
   <project path="external/protobuf" name="platform/external/protobuf" />
-  <project path="external/qemu" name="platform/external/qemu" />
+  <project path="external/qemu" name="androidnn-platform-external-qemu" remote="github" revision="p-xtsc-cosim" />
   <project path="external/tinyobjloader" name="platform/external/tinyobjloader" revision="master"/>
   <project path="frameworks/native" name="platform/frameworks/native" revision="lollipop-release" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" />
