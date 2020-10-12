@@ -3,6 +3,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch="https://github.com/foss-xtensa/" />
   <default remote="aosp" revision="emu-30-release" sync-j="4" />
 
   <project name="platform/build" path="build" revision="7a0a9bdebf6440172922d9cde223eabbf428c255" />
@@ -38,7 +40,7 @@
   <project name="platform/external/openssl" path="external/openssl" revision="8953c287cf742a22411f75fab28a33772240e44f" />
   <project name="platform/external/pixman" path="external/pixman" revision="07a4f67e39d921a0a44a09e2ee67449dcfd66614" />
   <project name="platform/external/protobuf" path="external/protobuf" revision="ca15ad7fb89a626c0d2a98240b11a2523727f9be" />
-  <project name="platform/external/qemu" path="external/qemu" revision="4b1ca6336c2d010813bcd85351098b7c4d0a0126">
+  <project name="androidnn-platform-external-qemu" path="external/qemu" remote="github" revision="11-xtsc-cosim">
     <copyfile dest="emu.code-workspace" src="android/vscode/emu.code-workspace" />
   </project>
   <project name="platform/external/qt" path="external/qt" revision="989b587a7ee85e4afde01b866aae3457bc9122c7" />
